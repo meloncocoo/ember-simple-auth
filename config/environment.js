@@ -19,13 +19,14 @@ module.exports = function(environment) {
     },
 
     'ember-simple-auth': {
-        routeAfterAuthentication: '/'
+        routeAfterAuthentication: '/',
+        authenticationRoute: '/login'
     }
   };
 
-    ENV['ember-simple-auth'] = {
-        routeAfterAuthentication: '/'
-    };
+//    ENV['ember-simple-auth'] = {
+//        routeAfterAuthentication: '/'
+//    };
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
