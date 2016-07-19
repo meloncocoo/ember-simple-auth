@@ -1,7 +1,8 @@
 <h2 id="title">Welcome to Ember</h2>
 <div class="menu">
     {{#if session.isAuthenticated}}
-        <a {{action 'invalidateSession'}}>Logout</a>
+        <a href="" {{action 'invalidateSession'}}>Logout</a>
+        Current user: {{session.currentUser.username}}
     {{else}}
         {{#link-to 'login'}}Login{{/link-to}}
     {{/if}}
